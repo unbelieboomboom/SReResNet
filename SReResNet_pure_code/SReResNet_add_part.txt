@@ -1,0 +1,30 @@
+	######
+	#	in class ResNet
+	######
+
+        for stage_name in self.stages:
+            x = getattr(self, stage_name)(x)
+            # Stage Recursive
+            x = getattr(self, stage_name)(x)
+            # Stage Recursive
+            if self.return_features[stage_name]:
+                outputs.append(x)
+
+
+
+	######
+	#	add to class Bottleneck
+	######
+
+	self.out_channels = out_channels
+
+	######
+	#	add to class Bottleneck,def forward(self, x):
+	######
+
+        # Stage Recursive
+        n,channels,w,h = x.shape
+        if channels == self.out_channels:
+            if self.downsample is not None:
+                return x
+        # Stage Recursive
