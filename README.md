@@ -29,7 +29,7 @@ no need for extra convolutional layers! Just reuse the bottlenecks in recursive 
 ![alt text](SReResNet_pure_code/diagram/SReResNet.png)
 
 Unrolling form of SReResNet.
-![alt text](SReResNet_pure_code/diagram/SReResNet unrolling form.png)
+![alt text](SReResNet_pure_code/diagram/SReResNet_unrolling_form.png)
 
 ## Diagram 
 * ResNet.
