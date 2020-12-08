@@ -1,5 +1,5 @@
 	######
-	#	in class ResNet
+	#	add to class ResNet
 	######
 
         for stage_name in self.stages:
