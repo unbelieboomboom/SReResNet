@@ -34,9 +34,13 @@ Fix SOLVER setting is used like [here](SReResNet_on_FCOS/configs/fcos/fcos_R_50_
 * [most concise code](SReResNet_pure_code/SReResNet_add_part.txt)
 
 no need for extra convolutional layers! Just reuse the bottlenecks in recursive part via several lines.
+
+
 ![alt text](SReResNet_pure_code/diagram/fig4a.png)
 
 Unrolling form of SReResNet.
+
+
 ![alt text](SReResNet_pure_code/diagram/fig4b.png)
 
 ## Diagram 
@@ -66,8 +70,7 @@ The redundant semantic information of the instance highlighted in green boxes is
 
 * Some results.
 
-![CIFARexp_acc_top1](SReResNet_pure_code/diagram/CIFARexp_acc_top1.png)
-![CIFARexp_wImageNetPretrained_acc_top1](SReResNet_pure_code/diagram/CIFARexp_wImageNetPretrained_acc_top1.png)
+![CIFARexp_acc_top1](SReResNet_pure_code/diagram/CIFARexp_acc_top1.png) ![CIFARexp_wImageNetPretrained_acc_top1](SReResNet_pure_code/diagram/CIFARexp_wImageNetPretrained_acc_top1.png)
 
 ## Models
 You can find some log files in "SReResNet_pure_code" which contain all configs and training details. 
